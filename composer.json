@@ -15,5 +15,7 @@
             "email": "kuzina.ruslana@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.0"
+    }
 }
