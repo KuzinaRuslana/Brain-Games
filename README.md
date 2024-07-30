@@ -3,3 +3,6 @@
 
 ### Code Climate Maintainability Badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/6e781e83dc5dfe8348df/maintainability)](https://codeclimate.com/github/KuzinaRuslana/php-project-45/maintainability)
+
+### Asciinema recordings:
+https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ
