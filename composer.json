@@ -1,20 +1,24 @@
 {
     "name": "hexlet/code",
-    "bin":[
-      "bin/brain-games"
-   ],
+    "type": "project",
     "description": "My first training project",
-    "autoload": {
-        "files": [
-            "src/Cli.php"
-	]
-    },
+    "license": "MIT",
     "authors": [
         {
             "name": "Ruslana",
             "email": "kuzina.ruslana@yandex.ru"
         }
     ],
+    "bin": [
+            "bin/brain-games",
+            "bin/brain-even"
+    ],
+    "autoload": {
+        "files": [
+            "src/Cli.php",
+            "src/Even.php"
+	    ]
+    },
     "require": {
         "wp-cli/php-cli-tools": "^0.12.0"
     },
