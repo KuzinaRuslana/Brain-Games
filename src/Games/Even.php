@@ -19,9 +19,14 @@ function generateQuestionsAndAnswers()
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
         $res[$i][] = $question;
-        $answer = $question % 2 === 0 ? "yes" : "no";
+        $answer = isEven($question);
         $res[$i][] = $answer;
     }
 
     return $res;
+}
+
+function isEven($question)
+{
+    return $question % 2 === 0 ? "yes" : "no";
 }
