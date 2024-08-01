@@ -12,14 +12,16 @@ function runGame()
     $task = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
     startGame($questionsAndAnswers, $task);
 }
+
 function generateQuestionsAndAnswers()
 {
     $res = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
-        $res[$i][] = $question;
         $answer = isEven($question);
+        
+        $res[$i][] = $question;
         $res[$i][] = $answer;
     }
 

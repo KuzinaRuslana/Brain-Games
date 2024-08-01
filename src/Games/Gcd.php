@@ -20,8 +20,11 @@ function generateQuestionsAndAnswers()
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $numOne = mt_rand(1, 10);
         $numTwo = mt_rand(1, 10);
-        $res[$i][] = "{$numOne} {$numTwo}";
+
+        $question = "{$numOne} {$numTwo}";
         $answer = (string) findGreatestCommonDivisor($numOne, $numTwo);
+
+        $res[$i][] = $question;
         $res[$i][] = $answer;
     }
 

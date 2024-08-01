@@ -16,15 +16,19 @@ function runGame()
 function generateQuestionsAndAnswers()
 {
     $operators = ["+", "-", "*"];
+    $operatorsCount = count($operators);
     $res = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $operandOne = mt_rand(0, 10);
         $operandTwo = mt_rand(0, 10);
-        $randIndex = mt_rand(0, 2);
+        $randIndex = mt_rand(0, $operatorsCount - 1);
         $operator = $operators[$randIndex];
-        $res[$i][] = "{$operandOne} {$operator} {$operandTwo}";
-        $answer = (string) calculate($operators[$randIndex], $operandOne, $operandTwo);
+        
+        $question = "{$operandOne} {$operator} {$operandTwo}";
+        $answer = (string) calculate($operator, $operandOne, $operandTwo);
+
+        $res[$i][] = $question;
         $res[$i][] = $answer;
     }
 
