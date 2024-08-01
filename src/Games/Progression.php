@@ -35,7 +35,7 @@ function generateQuestionsAndAnswers()
     return $res;
 }
 
-function createProgression($firstElem, $interval)
+function createProgression(int $firstElem, int $interval)
 {
     $res = [];
     $progressionLength = 10;

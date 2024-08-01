@@ -28,8 +28,12 @@ function generateQuestionsAndAnswers()
     return $res;
 }
 
-function isPrime($question)
+function isPrime(int $question)
 {
+    if ($question === 0) {
+        return 'no';
+    }
+
     for ($i = 2; $i < $question; $i++) {
         if ($question % $i === 0) {
             return 'no';

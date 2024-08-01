@@ -28,7 +28,7 @@ function generateQuestionsAndAnswers()
     return $res;
 }
 
-function isEven($question)
+function isEven(int $question)
 {
     return $question % 2 === 0 ? 'yes' : 'no';
 }

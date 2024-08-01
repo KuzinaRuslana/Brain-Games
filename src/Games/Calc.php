@@ -35,12 +35,12 @@ function generateQuestionsAndAnswers()
     return $res;
 }
 
-function calculate($operator, $operandOne, $operandTwo)
+function calculate(string $operator, int $operandOne, int $operandTwo)
 {
     $result = match ($operator) {
         '+' => $operandOne + $operandTwo,
         '-' => $operandOne - $operandTwo,
-        '*' => $operandOne * $operandTwo,
+        default => $operandOne * $operandTwo,
     };
 
     return $result;

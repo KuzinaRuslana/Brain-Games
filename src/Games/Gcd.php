@@ -31,7 +31,7 @@ function generateQuestionsAndAnswers()
     return $res;
 }
 
-function findGreatestCommonDivisor($numOne, $numTwo)
+function findGreatestCommonDivisor(int $numOne, int $numTwo)
 {
     while ($numTwo != 0) {
         $temp = $numTwo;
