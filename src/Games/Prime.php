@@ -18,7 +18,7 @@ function generateQuestionsAndAnswers()
     $res = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
-        $question = mt_rand(0, 100);
+        $question = mt_rand(1, 100);
         $answer = isPrime($question);
 
         $res[$i][] = $question;
@@ -30,13 +30,11 @@ function generateQuestionsAndAnswers()
 
 function isPrime($question)
 {
-    $divisors = [];
-
-    for ($i = 1; $i <= $question; $i++) {
-        if (is_int($question / $i)) {
-            $divisors[] = $i;
+    for ($i = 2; $i < $question; $i++) {
+        if ($question % $i === 0) {
+            return 'no';
         }
     }
 
-    return count($divisors) === 2 ? "yes" : "no";
+    return 'yes';
 }
