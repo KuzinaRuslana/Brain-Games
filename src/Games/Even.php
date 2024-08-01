@@ -20,7 +20,7 @@ function generateQuestionsAndAnswers()
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
         $answer = isEven($question);
-        
+
         $res[$i][] = $question;
         $res[$i][] = $answer;
     }

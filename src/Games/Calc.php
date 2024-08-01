@@ -24,7 +24,7 @@ function generateQuestionsAndAnswers()
         $operandTwo = mt_rand(0, 10);
         $randIndex = mt_rand(0, $operatorsCount - 1);
         $operator = $operators[$randIndex];
-        
+
         $question = "{$operandOne} {$operator} {$operandTwo}";
         $answer = (string) calculate($operator, $operandOne, $operandTwo);
 

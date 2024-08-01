@@ -24,7 +24,7 @@ function generateQuestionsAndAnswers()
 
         $hiddenElemIndex = mt_rand(0, 9);
         $answer = (string) $progression[$hiddenElemIndex];
-        
+
         $progression[$hiddenElemIndex] = "..";
         $question = implode(" ", $progression);
 
