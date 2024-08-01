@@ -9,13 +9,13 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = "What is the result of the expression?";
+    $task = 'What is the result of the expression?';
     startGame($questionsAndAnswers, $task);
 }
 
 function generateQuestionsAndAnswers()
 {
-    $operators = ["+", "-", "*"];
+    $operators = ['+', '-', '*'];
     $operatorsCount = count($operators);
     $res = [];
 
@@ -38,9 +38,9 @@ function generateQuestionsAndAnswers()
 function calculate($operator, $operandOne, $operandTwo)
 {
     $result = match ($operator) {
-        "+" => $operandOne + $operandTwo,
-        "-" => $operandOne - $operandTwo,
-        "*" => $operandOne * $operandTwo,
+        '+' => $operandOne + $operandTwo,
+        '-' => $operandOne - $operandTwo,
+        '*' => $operandOne * $operandTwo,
     };
 
     return $result;

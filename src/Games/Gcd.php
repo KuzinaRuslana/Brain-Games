@@ -9,7 +9,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = "Find the greatest common divisor of given numbers.";
+    $task = 'Find the greatest common divisor of given numbers.';
     startGame($questionsAndAnswers, $task);
 }
 

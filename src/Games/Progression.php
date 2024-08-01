@@ -9,7 +9,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = "What number is missing in the progression?";
+    $task = 'What number is missing in the progression?';
     startGame($questionsAndAnswers, $task);
 }
 
@@ -25,8 +25,8 @@ function generateQuestionsAndAnswers()
         $hiddenElemIndex = mt_rand(0, 9);
         $answer = (string) $progression[$hiddenElemIndex];
 
-        $progression[$hiddenElemIndex] = "..";
-        $question = implode(" ", $progression);
+        $progression[$hiddenElemIndex] = '..';
+        $question = implode(' ', $progression);
 
         $res[$i][] = $question;
         $res[$i][] = $answer;

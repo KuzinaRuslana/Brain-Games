@@ -30,5 +30,5 @@ function generateQuestionsAndAnswers()
 
 function isEven($question)
 {
-    return $question % 2 === 0 ? "yes" : "no";
+    return $question % 2 === 0 ? 'yes' : 'no';
 }
