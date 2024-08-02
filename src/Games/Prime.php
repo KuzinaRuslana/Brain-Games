@@ -18,7 +18,7 @@ function generateQuestionsAndAnswers()
     $res = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
-        $question = mt_rand(1, 100);
+        $question = mt_rand(0, 100);
         $answer = isPrime($question);
 
         $res[$i][] = $question;
@@ -30,7 +30,7 @@ function generateQuestionsAndAnswers()
 
 function isPrime(int $question)
 {
-    if ($question === 0) {
+    if ($question <= 1) {
         return 'no';
     }
 
