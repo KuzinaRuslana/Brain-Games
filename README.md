@@ -17,11 +17,11 @@ composer global require "example/brain-games"
 ```
 
 ### Getting started
-Use 'make' command to run a game:
+Use 'make' commands. For instance:
 ```bash
-make ...
+make brain-games
 ```
-where '...' is a name of the game you want to play. All games are listed below:
+Instead of `brain-games` you can use a name of the game you want to play. All games are listed below:
 * **brain-even** — odd or even?
 * **brain-calc** — what's the result of the expression?
 * **brain-gcd** — what's the greatest common divisor?
