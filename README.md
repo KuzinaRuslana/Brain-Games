@@ -8,7 +8,7 @@
 Bored or tired? It's time to play! Meet the Brain Games — a pack of five vintage terminal games that will definitely boost your brainpower.
 
 ### Requirements
-Requires PHP version 5.6.0 or greater and Composer.
+Requires Linux command line, PHP version 5.6.0 or greater and Composer.
 
 ### Installation
 Use Composer to install the Brain Games. The following command will install it system-wide:
@@ -17,16 +17,27 @@ composer global require "example/brain-games"
 ```
 
 ### Getting started
-Use 'make' commands. For instance:
-```bash
-make brain-games
-```
-Instead of `brain-games` you can use a name of the game you want to play. All games are listed below:
+Use 'make' command to run a game:
 * **brain-even** — odd or even?
+```bash
+make brain-even
+```
 * **brain-calc** — what's the result of the expression?
+```bash
+make brain-calc
+```
 * **brain-gcd** — what's the greatest common divisor?
+```bash
+make brain-gcd
+```
 * **brain-progression** — what number is missing in the progression?
+```bash
+make brain-progression
+```
 * **brain-prime** — prime or not?
+```bash
+make brain-prime
+```
 
 ### Asciinema recordings
 1. [brain-even demonstration](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ)
