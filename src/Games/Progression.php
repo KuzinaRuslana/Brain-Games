@@ -6,11 +6,12 @@ use function Php\Project\Engine\startGame;
 
 use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
+const GAME_TASK = 'What number is missing in the progression?';
+
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = 'What number is missing in the progression?';
-    startGame($questionsAndAnswers, $task);
+    startGame($questionsAndAnswers, GAME_TASK);
 }
 
 function generateQuestionsAndAnswers()

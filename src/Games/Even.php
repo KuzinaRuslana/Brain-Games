@@ -6,11 +6,12 @@ use function Php\Project\Engine\startGame;
 
 use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
+const GAME_TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    startGame($questionsAndAnswers, $task);
+    startGame($questionsAndAnswers, GAME_TASK);
 }
 
 function generateQuestionsAndAnswers()

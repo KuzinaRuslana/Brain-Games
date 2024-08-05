@@ -6,11 +6,12 @@ use function Php\Project\Engine\startGame;
 
 use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
+const GAME_TASK = 'Find the greatest common divisor of given numbers.';
+
 function runGame()
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
-    $task = 'Find the greatest common divisor of given numbers.';
-    startGame($questionsAndAnswers, $task);
+    startGame($questionsAndAnswers, GAME_TASK);
 }
 
 function generateQuestionsAndAnswers()
