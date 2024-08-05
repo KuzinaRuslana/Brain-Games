@@ -16,29 +16,29 @@ function runGame()
 
 function generateQuestionsAndAnswers()
 {
-    $res = [];
+    $questionsAndAnswersPairs = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
-        $numOne = mt_rand(1, 10);
-        $numTwo = mt_rand(1, 10);
+        $firstNumber = mt_rand(1, 10);
+        $secondNumber = mt_rand(1, 10);
 
-        $question = "{$numOne} {$numTwo}";
-        $answer = (string) findGreatestCommonDivisor($numOne, $numTwo);
+        $question = "{$firstNumber} {$secondNumber}";
+        $answer = (string) findGreatestCommonDivisor($firstNumber, $secondNumber);
 
-        $res[$i][] = $question;
-        $res[$i][] = $answer;
+        $questionsAndAnswersPairs[$i][] = $question;
+        $questionsAndAnswersPairs[$i][] = $answer;
     }
 
-    return $res;
+    return $questionsAndAnswersPairs;
 }
 
-function findGreatestCommonDivisor(int $numOne, int $numTwo)
+function findGreatestCommonDivisor(int $firstNumber, int $secondNumber)
 {
-    while ($numTwo != 0) {
-        $temp = $numTwo;
-        $numTwo = $numOne % $numTwo;
-        $numOne = $temp;
+    while ($secondNumber != 0) {
+        $temp = $secondNumber;
+        $secondNumber = $firstNumber % $secondNumber;
+        $firstNumber = $temp;
     }
 
-    return $numOne;
+    return $firstNumber;
 }

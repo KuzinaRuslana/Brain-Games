@@ -16,35 +16,35 @@ function runGame()
 
 function generateQuestionsAndAnswers()
 {
-    $res = [];
+    $questionsAndAnswersPairs = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
-        $firstElem = mt_rand(0, 50);
+        $firstElement = mt_rand(0, 50);
         $interval = mt_rand(1, 9);
-        $progression = createProgression($firstElem, $interval);
+        $progression = createProgression($firstElement, $interval);
 
-        $hiddenElemIndex = mt_rand(0, 9);
-        $answer = (string) $progression[$hiddenElemIndex];
+        $hiddenElementIndex = mt_rand(0, 9);
+        $answer = (string) $progression[$hiddenElementIndex];
 
-        $progression[$hiddenElemIndex] = '..';
+        $progression[$hiddenElementIndex] = '..';
         $question = implode(' ', $progression);
 
-        $res[$i][] = $question;
-        $res[$i][] = $answer;
+        $questionsAndAnswersPairs[$i][] = $question;
+        $questionsAndAnswersPairs[$i][] = $answer;
     }
 
-    return $res;
+    return $questionsAndAnswersPairs;
 }
 
-function createProgression(int $firstElem, int $interval)
+function createProgression(int $firstElement, int $interval)
 {
-    $res = [];
+    $progression = [];
     $progressionLength = 10;
 
     for ($i = 0; $i < $progressionLength; $i++) {
-        $res[] = $firstElem;
-        $firstElem += $interval;
+        $progression[] = $firstElement;
+        $firstElement += $interval;
     }
 
-    return $res;
+    return $progression;
 }

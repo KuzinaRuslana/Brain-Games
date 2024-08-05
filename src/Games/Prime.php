@@ -16,17 +16,17 @@ function runGame()
 
 function generateQuestionsAndAnswers()
 {
-    $res = [];
+    $questionsAndAnswersPairs = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
         $answer = isPrime($question);
 
-        $res[$i][] = $question;
-        $res[$i][] = $answer;
+        $questionsAndAnswersPairs[$i][] = $question;
+        $questionsAndAnswersPairs[$i][] = $answer;
     }
 
-    return $res;
+    return $questionsAndAnswersPairs;
 }
 
 function isPrime(int $question)

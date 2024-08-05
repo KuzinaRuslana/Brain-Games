@@ -18,22 +18,22 @@ function generateQuestionsAndAnswers()
 {
     $operators = ['+', '-', '*'];
     $operatorsCount = count($operators);
-    $res = [];
+    $questionsAndAnswersPairs = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $operandOne = mt_rand(0, 10);
         $operandTwo = mt_rand(0, 10);
-        $randIndex = mt_rand(0, $operatorsCount - 1);
-        $operator = $operators[$randIndex];
+        $randomIndex = mt_rand(0, $operatorsCount - 1);
+        $operator = $operators[$randomIndex];
 
         $question = "{$operandOne} {$operator} {$operandTwo}";
         $answer = (string) calculate($operator, $operandOne, $operandTwo);
 
-        $res[$i][] = $question;
-        $res[$i][] = $answer;
+        $questionsAndAnswersPairs[$i][] = $question;
+        $questionsAndAnswersPairs[$i][] = $answer;
     }
 
-    return $res;
+    return $questionsAndAnswersPairs;
 }
 
 function calculate(string $operator, int $operandOne, int $operandTwo)
