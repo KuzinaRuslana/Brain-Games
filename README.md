@@ -40,8 +40,13 @@ make brain-prime
 ```
 
 ### Asciinema recordings
-1. [brain-even demonstration](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ)
-2. [brain-calc demonstration](https://asciinema.org/a/dDbehwhkP9mOYNL1ILQqMVNZs)
-3. [brain-gcd demonstration](https://asciinema.org/a/QbS8K9e9Sx21YI5IpcvyRDC8f)
-4. [brain-progression demonstration](https://asciinema.org/a/2k727J1ONLfMQ8KGPkZDPcmhj)
-5. [brain-prime demonstration](https://asciinema.org/a/WSfFzjbzLz5zEKZUAAFWUdsYD)
+1. brain-even demonstration:
+[![asciicast](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ.svg)](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ)
+2. brain-calc demonstration:
+[![asciicast](https://asciinema.org/a/dDbehwhkP9mOYNL1ILQqMVNZs.svg)](https://asciinema.org/a/dDbehwhkP9mOYNL1ILQqMVNZs)
+3. brain-gcd demonstration:
+[![asciicast](https://asciinema.org/a/QbS8K9e9Sx21YI5IpcvyRDC8f.svg)](https://asciinema.org/a/QbS8K9e9Sx21YI5IpcvyRDC8f)
+4. brain-progression demonstration:
+[![asciicast](https://asciinema.org/a/2k727J1ONLfMQ8KGPkZDPcmhj.svg)](https://asciinema.org/a/2k727J1ONLfMQ8KGPkZDPcmhj)
+5. brain-prime demonstration:
+[![asciicast](https://asciinema.org/a/WSfFzjbzLz5zEKZUAAFWUdsYD.svg)](https://asciinema.org/a/WSfFzjbzLz5zEKZUAAFWUdsYD)
