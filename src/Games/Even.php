@@ -20,7 +20,7 @@ function generateQuestionsAndAnswers()
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
-        $answer = isEven($question);
+        $answer = isEven($question) ? 'yes' : 'no';
 
         $questionsAndAnswersPairs[$i][] = $question;
         $questionsAndAnswersPairs[$i][] = $answer;
@@ -31,5 +31,5 @@ function generateQuestionsAndAnswers()
 
 function isEven(int $question)
 {
-    return $question % 2 === 0 ? 'yes' : 'no';
+    return $question % 2 === 0;
 }

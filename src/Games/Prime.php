@@ -20,7 +20,7 @@ function generateQuestionsAndAnswers()
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $question = mt_rand(0, 100);
-        $answer = isPrime($question);
+        $answer = isPrime($question) ? 'yes' : 'no';
 
         $questionsAndAnswersPairs[$i][] = $question;
         $questionsAndAnswersPairs[$i][] = $answer;
@@ -32,14 +32,14 @@ function generateQuestionsAndAnswers()
 function isPrime(int $question)
 {
     if ($question <= 1) {
-        return 'no';
+        return false;
     }
 
     for ($i = 2; $i < $question; $i++) {
         if ($question % $i === 0) {
-            return 'no';
+            return false;
         }
     }
 
-    return 'yes';
+    return true;
 }
