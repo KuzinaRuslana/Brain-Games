@@ -14,7 +14,7 @@ function runGame()
     startGame($questionsAndAnswers, GAME_TASK);
 }
 
-function generateQuestionsAndAnswers()
+function generateQuestionsAndAnswers(): array
 {
     $questionsAndAnswersPairs = [];
 
@@ -29,7 +29,7 @@ function generateQuestionsAndAnswers()
     return $questionsAndAnswersPairs;
 }
 
-function isEven(int $question)
+function isEven(int $question): bool
 {
     return $question % 2 === 0;
 }

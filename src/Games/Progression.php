@@ -14,7 +14,7 @@ function runGame()
     startGame($questionsAndAnswers, GAME_TASK);
 }
 
-function generateQuestionsAndAnswers()
+function generateQuestionsAndAnswers(): array
 {
     $questionsAndAnswersPairs = [];
 
@@ -36,7 +36,7 @@ function generateQuestionsAndAnswers()
     return $questionsAndAnswersPairs;
 }
 
-function createProgression(int $firstElement, int $interval)
+function createProgression(int $firstElement, int $interval): array
 {
     $progression = [];
     $progressionLength = 10;

@@ -14,7 +14,7 @@ function runGame()
     startGame($questionsAndAnswers, GAME_TASK);
 }
 
-function generateQuestionsAndAnswers()
+function generateQuestionsAndAnswers(): array
 {
     $operators = ['+', '-', '*'];
     $operatorsCount = count($operators);
@@ -36,7 +36,7 @@ function generateQuestionsAndAnswers()
     return $questionsAndAnswersPairs;
 }
 
-function calculate(string $operator, int $operandOne, int $operandTwo)
+function calculate(string $operator, int $operandOne, int $operandTwo): int
 {
     $result = match ($operator) {
         '+' => $operandOne + $operandTwo,

@@ -14,7 +14,7 @@ function runGame()
     startGame($questionsAndAnswers, GAME_TASK);
 }
 
-function generateQuestionsAndAnswers()
+function generateQuestionsAndAnswers(): array
 {
     $questionsAndAnswersPairs = [];
 
@@ -32,13 +32,16 @@ function generateQuestionsAndAnswers()
     return $questionsAndAnswersPairs;
 }
 
-function findGreatestCommonDivisor(int $firstNumber, int $secondNumber)
+function findGreatestCommonDivisor(int $firstNumber, int $secondNumber): int
 {
-    while ($secondNumber != 0) {
-        $temp = $secondNumber;
-        $secondNumber = $firstNumber % $secondNumber;
-        $firstNumber = $temp;
+    $firstOperand = $firstNumber;
+    $secondOperand = $secondNumber;
+
+    while ($secondOperand != 0) {
+        $temp = $secondOperand;
+        $secondOperand = $firstOperand % $secondOperand;
+        $firstOperand = $temp;
     }
 
-    return $firstNumber;
+    return $firstOperand;
 }
