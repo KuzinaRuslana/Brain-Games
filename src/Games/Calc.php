@@ -17,13 +17,12 @@ function runGame()
 function generateQuestionsAndAnswers(): array
 {
     $operators = ['+', '-', '*'];
-    $operatorsCount = count($operators);
     $questionsAndAnswersPairs = [];
 
     for ($i = 0; $i < NUMBER_OF_QUESTIONS; $i++) {
         $operandOne = mt_rand(0, 10);
         $operandTwo = mt_rand(0, 10);
-        $randomIndex = mt_rand(0, $operatorsCount - 1);
+        $randomIndex = array_rand($operators);
         $operator = $operators[$randomIndex];
 
         $question = "{$operandOne} {$operator} {$operandTwo}";
@@ -41,7 +40,8 @@ function calculate(string $operator, int $operandOne, int $operandTwo): int
     $result = match ($operator) {
         '+' => $operandOne + $operandTwo,
         '-' => $operandOne - $operandTwo,
-        default => $operandOne * $operandTwo,
+        '*' => $operandOne * $operandTwo,
+        default => 'Invalid operator',
     };
 
     return $result;
