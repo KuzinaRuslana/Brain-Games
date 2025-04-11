@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const NUMBER_OF_QUESTIONS = 3;
 
-function startGame(array $questionsAndAnswers, string $task)
+function startGame(array $questionsAndAnswers, string $task): void
 {
     line('Welcome to the Brain Games!');
     $userName = prompt('May I have your name?', false, ' ');

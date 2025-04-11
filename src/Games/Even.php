@@ -8,7 +8,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
 const GAME_TASK = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
     startGame($questionsAndAnswers, GAME_TASK);

@@ -8,7 +8,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
 const GAME_TASK = 'What number is missing in the progression?';
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
     startGame($questionsAndAnswers, GAME_TASK);

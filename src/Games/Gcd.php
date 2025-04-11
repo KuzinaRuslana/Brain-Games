@@ -8,7 +8,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
 const GAME_TASK = 'Find the greatest common divisor of given numbers.';
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
     startGame($questionsAndAnswers, GAME_TASK);
@@ -37,7 +37,7 @@ function findGreatestCommonDivisor(int $firstNumber, int $secondNumber): int
     $firstOperand = $firstNumber;
     $secondOperand = $secondNumber;
 
-    while ($secondOperand != 0) {
+    while ($secondOperand !== 0) {
         $temp = $secondOperand;
         $secondOperand = $firstOperand % $secondOperand;
         $firstOperand = $temp;

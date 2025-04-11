@@ -8,7 +8,7 @@ use const Php\Project\Engine\NUMBER_OF_QUESTIONS;
 
 const GAME_TASK = 'What is the result of the expression?';
 
-function runGame()
+function runGame(): void
 {
     $questionsAndAnswers = generateQuestionsAndAnswers();
     startGame($questionsAndAnswers, GAME_TASK);
@@ -35,7 +35,7 @@ function generateQuestionsAndAnswers(): array
     return $questionsAndAnswersPairs;
 }
 
-function calculate(string $operator, int $operandOne, int $operandTwo): int
+function calculate(string $operator, int $operandOne, int $operandTwo): int|string
 {
     $result = match ($operator) {
         '+' => $operandOne + $operandTwo,
