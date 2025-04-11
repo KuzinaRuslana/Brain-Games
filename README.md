@@ -8,12 +8,16 @@
 Bored or tired? It's time to play! Meet the Brain Games — a pack of five vintage terminal games that will definitely boost your brainpower.
 
 ### Requirements
-Requires Linux command line, PHP version 5.6.0 or greater and Composer.
++ Linux command line
++ PHP version 5.6.0 or greater
++ Composer.
 
 ### Installation
-Use Composer to install the Brain Games. The following command will install it system-wide:
+Install the project using Git and Composer:
 ```bash
-composer global require "example/brain-games"
+git clone https://github.com/KuzinaRuslana/Brain-Games.git
+cd Brain-Games
+make install
 ```
 
 ### Getting started
@@ -40,13 +44,13 @@ make brain-prime
 ```
 
 ### Asciinema recordings
-1. brain-even demonstration:
+#### brain-even demonstration:
 [![asciicast](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ.svg)](https://asciinema.org/a/hejs1aRcORpedK0yljKdKPNTJ)
-2. brain-calc demonstration:
+#### brain-calc demonstration:
 [![asciicast](https://asciinema.org/a/dDbehwhkP9mOYNL1ILQqMVNZs.svg)](https://asciinema.org/a/dDbehwhkP9mOYNL1ILQqMVNZs)
-3. brain-gcd demonstration:
+#### brain-gcd demonstration:
 [![asciicast](https://asciinema.org/a/QbS8K9e9Sx21YI5IpcvyRDC8f.svg)](https://asciinema.org/a/QbS8K9e9Sx21YI5IpcvyRDC8f)
-4. brain-progression demonstration:
+#### brain-progression demonstration:
 [![asciicast](https://asciinema.org/a/2k727J1ONLfMQ8KGPkZDPcmhj.svg)](https://asciinema.org/a/2k727J1ONLfMQ8KGPkZDPcmhj)
-5. brain-prime demonstration:
+#### brain-prime demonstration:
 [![asciicast](https://asciinema.org/a/WSfFzjbzLz5zEKZUAAFWUdsYD.svg)](https://asciinema.org/a/WSfFzjbzLz5zEKZUAAFWUdsYD)
