@@ -10,7 +10,7 @@ Bored or tired? It's time to play! Meet the Brain Games — a pack of five vinta
 ### Requirements
 + Linux command line
 + PHP version 5.6.0 or greater
-+ Composer.
++ Composer
 
 ### Installation
 Install the project using Git and Composer:
